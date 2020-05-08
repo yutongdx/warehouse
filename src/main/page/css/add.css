@@ -35,3 +35,16 @@ h1{
     transform: translateX(-50%);
 }
 .layui-btn.right{margin-left: 30px;}
+
+.addPrintForm {
+    position: relative;
+    width: 700px;
+    height: 200px;
+
+    border: 1px;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    margin-top: -200px;
+    margin-left: -150px;
+}

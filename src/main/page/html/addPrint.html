@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加订货报表信息</title>
+    <link rel="stylesheet" href="../../resources/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../css/add.css">
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+</head>
+    <body class="addPrintForm">
+        <div class="test">
+            <form class="layui-form layui-form-pane" action="" method="post">
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%">零件编号</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input partId" name="partId" lay-verify="required" placeholder="请输入零件编号" autocomplete="off">
+                    </div>
+                    <label class="layui-form-label" style="width: 20%">零件名称</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input partName" name="partName" lay-verify="required" placeholder="请输入零件名称" autocomplete="off">
+                    </div>
+                </div>
+                <br>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%">目前价格</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input price" name="price" lay-verify="required" placeholder="请输入目前价格" autocomplete="off">
+                    </div>
+                    <label class="layui-form-label" style="width: 20%">订货数量</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input amount" name="amount" lay-verify="required" placeholder="请输入订货数量" autocomplete="off">
+                    </div>
+                </div>
+                <br>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%">主要供应商编号</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input firstSupplierId" name="firstSupplierId" lay-verify="required" placeholder="请输入主要供应商编号" autocomplete="off">
+                    </div>
+                    <label class="layui-form-label" style="width: 20%">主要供应商名称</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input firstSupplierName" name="firstSupplierName" lay-verify="required" placeholder="请输入主要供应商名称" autocomplete="off">
+                    </div>
+                </div>
+                <br>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%">主要供应商电话</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input firstSupplierTelephone" name="firstSupplierTelephone" lay-verify="required" placeholder="请输入主要供应商电话" autocomplete="off">
+                    </div>
+                </div>
+                <br>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%">次要供应商编号</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input secondSupplierId" name="secondSupplierId" lay-verify="required" placeholder="请输入次要供应商编号" autocomplete="off">
+                    </div>
+                    <label class="layui-form-label" style="width: 20%">次要供应商名称</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input secondSupplierName" name="ssecondSupplierName" lay-verify="required" placeholder="请输入次要供应商名称" autocomplete="off">
+                    </div>
+                </div>
+                <br>
+                <div class="layui-form-item">
+                    <label class="layui-form-label" style="width: 20%">次要供应商电话</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input secondSupplierTelephone" name="secondSupplierTelephone" lay-verify="required" placeholder="请输入次要供应商电话" autocomplete="off">
+                    </div>
+                </div>
+                <br>
+                <div class="layui-form-item botton">
+                    <div class="layui-input-inline">
+                        <button type="submit" class="layui-btn" lay-submit="" lay-filter="set">提交</button>
+                        <button type="reset" class="layui-btn right">重置</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <script src="../../resources/layui/layui.js"></script>
+        <script src="../../resources/layui/lay/modules/jquery.js"></script>
+        <script>
+            layui.use(['form', 'layedit', 'laydate'], function(){
+                var form = layui.form
+                    ,layer = layui.layer;
+
+                //监听提交
+                form.on('submit(set)', function(data){
+                    layer.alert(JSON.stringify(data.field), {
+                        title: '最终的提交信息'
+                    });
+                    return false;
+                });
+
+
+            });
+        </script>
+    </body>
+</html>

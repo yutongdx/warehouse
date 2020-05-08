@@ -19,7 +19,7 @@ layui.use(['form','layer','table','laytpl'],function(){
             {type: "checkbox", fixed:"left", width:50},
             {field: 'partId', title: '零件编号',  align:"center"},
             {field: 'partName', title: '零件名称', minWidth:100, align:'center'},
-            {field: 'price', title: '零件价格', minWidth:100, align:'center'},
+            {field: 'price', title: '零件价格(元)', minWidth:100, align:'center'},
             {field: 'amount', title: '订货数量',  align:"center"},
             {field: 'firstSupplier', title: '主要供应商编号', minWidth:100, align:'center'},
             {field: 'secondSupplier', title: '次要供应商编号', minWidth:100, align:'center'},
