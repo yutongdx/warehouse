@@ -1,0 +1,31 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 4,
+  "data": [
+    {
+      "storebillId": "1",
+      "partId": "1",
+      "amount": "301",
+      "threshold": "500"
+    },
+    {
+      "storebillId": "2",
+      "partId": "4",
+      "amount": "20000",
+      "threshold": "10000"
+    },
+    {
+      "storebillId": "3",
+      "partId": "7",
+      "amount": "40",
+      "threshold": "40000"
+    },
+    {
+      "storebillId": "4",
+      "partId": "8",
+      "amount": "301",
+      "threshold": "90"
+    }
+  ]
+}

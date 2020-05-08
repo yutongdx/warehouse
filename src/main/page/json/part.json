@@ -1,0 +1,22 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 2,
+  "data": [
+    {
+      "partId": "1",
+      "partName": "固态硬盘",
+      "price": "1000",
+      "amount": "100",
+      "firstSupplier": "9",
+      "secondSupplier": "3"
+    },{
+      "partId": "2",
+      "partName": "内存条",
+      "price": "250",
+      "amount": "2000",
+      "firstSupplier": "1",
+      "secondSupplier": "2"
+    }
+  ]
+}

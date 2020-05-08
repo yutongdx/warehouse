@@ -1,0 +1,33 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 3,
+  "data": [
+    {
+      "transactionId": "1",
+      "type": "出库",
+      "amount": "123456",
+      "time": "2020/5/7 10:21",
+      "threshold": "123456",
+      "partId": "1",
+      "storeId": "1"
+    },{
+      "transactionId": "2",
+      "type": "入库",
+      "amount": "123456",
+      "time": "2020/5/7 13:42",
+      "threshold": "",
+      "partId": "1",
+      "storeId": ""
+    },
+    {
+      "transactionId": "3",
+      "type": "出库",
+      "amount": "123456",
+      "time": "2020/5/8 10:21",
+      "threshold": "134567",
+      "partId": "1",
+      "storeId": ""
+    }
+  ]
+}

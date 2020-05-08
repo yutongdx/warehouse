@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签页</title>
+    <link rel="stylesheet" href="../../resources/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+    <div class="layui-layout layui-layout-admin">
+
+        <div class="layui-header header">
+            <h1>订货系统</h1>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="navBar layui-side-scroll" id="navBar">
+                <ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="test">
+                    <li class="layui-nav-item">
+                        <a href="#" >首页</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="transaction.html" target="right">事务信息管理</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="supplier.html" target="right">供应商信息管理</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="part.html" target="right">零件信息管理</a>
+
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="storebill.html" target="right">库存信息管理</a>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">订货信息管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="ordermsg.html" target="right">查改订货信息</a></dd>
+                            <dd><a href="print.html" target="right">打印订货报表</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body layui-form">
+            <div class="layui-tab-content clildFrame">
+                <div class="layui-tab-item layui-show">
+                    <iframe name="right" id="right" src="main.html"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../resources/layui/layui.js"></script>
+    <script>
+    layui.use('element', function(){
+
+    });
+    </script>
+</body>
+</html>

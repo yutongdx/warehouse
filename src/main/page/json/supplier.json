@@ -1,0 +1,21 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 3,
+  "data": [
+    {
+      "supplierId": "1",
+      "supplierName": "驊驊龔頾",
+      "supplierTelephone": "123456"
+    },{
+      "supplierId": "2",
+      "supplierName": "贤心",
+      "supplierTelephone": "8322734"
+    },
+    {
+      "supplierId": "3",
+      "supplierName": "纸飞机",
+      "supplierTelephone": "356481"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+html, body {
+    background-image: url("../../resources/image/background.png");
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.content {
+    width: 400px;
+    height: 150px;
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    right: 0;
+    margin: 0 auto;
+}
